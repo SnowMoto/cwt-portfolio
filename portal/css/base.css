@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color:rgb(255, 239, 219);
+}
+
+header, main, footer{
+    max-width: 800px;
+    margin:auto;
+}
+
+header, footer{
+    border: solid 3px #daa520;
+    padding: .25rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    background-color: #e5e5f7;
+    background-color: #000000;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    color:rgb(255, 239, 219);
+}
+
+img{
+    width: 15%;
+    height: auto;
+    position: relative;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border: 3px solid black;
+    padding: .35rem;
+    margin-left: .25rem;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    margin: 6.5rem 0 0 1rem;
+}
+
+.light {
+    position: absolute;
+    border-radius: 10px 0 0 10px;
+    margin: 6% 0 0 35%;
+    transform: rotate(25deg);
+    width: 250px;
+    height: 10px;
+    box-shadow: 0 0 1px #03e9f4, 0 0 15px #03e9f4, 0 0 40px #03e9f4, 0 0 90px #03e9f4;
+    background: #dcf1ff;
+}
+
+.dark {
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    margin: 6% 0 0 35%;
+    transform: rotate(-25deg);
+    width: 250px;
+    height: 10px;
+    box-shadow: 0 0 15px #ed0505, 0 0 30px #ed0505, 0 0 55px #ed0505, 0 0 105px #ed0505;
+    background: #ffffff;
+}
+
+h2{
+    color: goldenrod;
+    text-align: center;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: lighter;
+}
+
+li, a {
+    list-style-type: square;
+    font-size: 1.25rem;
+    color:rgb(255, 239, 219);
+}
+
+footer, .weblink{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod
+}
