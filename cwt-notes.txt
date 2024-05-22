@@ -1,0 +1,14 @@
+Create a discount indicator for product listing page.
+
+import the Json into the JavaScript
+
+Loop through Json object while JSon has elements read the Json object
+    Inspect to get the retal price, name, discount price, other needed elements
+    Detremine if there is a discount and what it is in %
+    If the discount price is less than retal - create boolean flag = true
+    Build HTML object indicating if there is a discounted price
+    Load object into the HTML index page
+
+@import(variable) from "directory/file" ;
+
+

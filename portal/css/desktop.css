@@ -1,0 +1,23 @@
+@media screen and (min-width: 825px) {
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: 15%;
+    }
+
+    h1 {
+        margin: 6.5rem 0 0 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .light {
+        margin: 6% 0 0 33%;
+    }
+
+    .dark {
+        margin: 6% 0 0 33%;
+    }
+}

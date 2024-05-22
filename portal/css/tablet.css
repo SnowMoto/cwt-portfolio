@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .light {
+        margin: 9% 0 0 55%;
+    }
+
+    .dark {
+        margin: 9% 0 0 55%;
+    }
+    
+}

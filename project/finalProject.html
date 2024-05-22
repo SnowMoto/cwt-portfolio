@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
-    <script href="./scripts/main.js"></script>
 </head>
 <body>
     <header>
-        <img src="chelsea_portrait.jpg" alt="self-image">
-        <h1>Chelsea Thomson</h1>
-        <div class="dark"></div>
-        <div class="light"></div>
+        <div class="saber" id="lotr"></div>
+        <div class="saber" id="red"></div>
+        <div class="saber" id="avenger"></div>
+        <div class="saber" id="blue"></div>
     </header>
     <main>
-        <h2>WDD330 Portfolio</h2>
-        <ul>
-            <li> <a href="notes.html">Weekly Class Notes and Resources</a></li>
-            <li> <a href="https://trello.com/b/02NBZH11">Trello Team Project Task Managment</a></li>
-            <li> <a href="https://main--wdd330-team-project.netlify.app/">Team16 Project Sleepoutside</a></li>
-            <li> <a href="evaluation.html">Self Evalutation of Participation</a> </li>
-            <li> <a href="../project/finalProject.html">Final Project: Movie API Application</a></li>
-        </ul>
+        <h1>Famous Catch Phrases</h1>    
+        <h2> Search by Movie</h2>
+        <div class="container">
+            <input type="text" id="myInput" placeholder="Search..." title="Type in a name">
+            <button id="search">Search</button>
+            <div id="list"></div>
+        </div>    
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Chelsea Thomson | Utah | 
         <a class="weblink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
     </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/movie.js"></script>
 </body>
  </html>
