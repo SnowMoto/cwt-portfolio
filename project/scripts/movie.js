@@ -7,6 +7,8 @@ const options = {method: 'GET',
 
 document.getElementById("search").addEventListener("click", search);
 
+const quotes = `https://movie-quotes-api.vercel.app/api/v1/quotes`
+
 async function search() {
   let token = document.getElementById("myInput");
   const url = `https://movie-database-alternative.p.rapidapi.com/?s=${token.value}&r=json&page=1`;
@@ -18,11 +20,13 @@ async function search() {
     list.innerHTML = ''; // Clear previous results
     result.Search.forEach(m => {
       if (m.Type === 'movie') { // Check if the type is 'movie'
-        list.innerHTML += `<img src="${m.Poster}" alt="${m.Title} Poster">`;
+        list.innerHTML += `<img onclick="myFunction ('${m.Title}','${m.Poster}')" src="${m.Poster}" alt="${m.Title} Poster">`;
       }
     });
   } catch (error) {
     console.error(error);
   }
 }
-
+function myFunction(Title, moviePoster){
+  alert(moviePoster);
+}

@@ -23,7 +23,7 @@ header {
     position: relative;
     display: block;
     width: 100%;
-    height: 150px;
+    height: 400px;
     margin: 0 auto;
 }
 
@@ -52,12 +52,14 @@ h1{
 
   #blue {
     animation-delay: 0s;
-    background-image: url('../images/blue.jpg');
+    background-image: url('../images/hp.jpg');
+    background-size: 100%;
   }
 
   #avenger {
     animation-delay: 5s;
     background-image: url('../images/avengers.jpg');
+    background-size: 100%;
   }
 
   #red {
@@ -66,8 +68,9 @@ h1{
   }
 
   #lotr {
-    animation-delay: 20s;
+    animation-delay: 15s;
     background-image: url('../images/lotr.jpg');
+    background-size: 100%;
   }
 
   @-webkit-keyframes fade {
@@ -114,8 +117,16 @@ h2{
 
 .container {
     display: flex;
+    flex-direction: row;
     margin: 0 30%;
     padding: 1rem;
+}
+
+#list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 footer, .weblink{

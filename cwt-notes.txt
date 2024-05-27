@@ -12,3 +12,5 @@ Loop through Json object while JSon has elements read the Json object
 @import(variable) from "directory/file" ;
 
 
+API that has all the info I need. Loop through the object to display all infor I need.
+If 2 apis find common object inside the Json to use to connect the sources.
