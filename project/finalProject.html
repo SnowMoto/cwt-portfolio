@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
 </head>
 <body>
@@ -19,19 +18,21 @@
         <div class="saber" id="blue"></div>
     </header>
     <main>
-        <h1>Famous Catch Phrases</h1>    
-        <h2> Search by Movie</h2>
+        <h1>What is your favorite Movie?</h1>  
+        <h2> Search by Title</h2>
         <div class="container">
             <input type="text" id="myInput" placeholder="Search..." title="Type in a name">
             <button id="search">Search</button>
         </div>
-        <div id="list"></div>    
+        <div id="list1" loading="lazy"></div>  
+        <div class="video-container">
+            <iframe src="https://giphy.com/embed/3owzW193WohlOkugsE"></iframe>
+        </div>  
     </main>
     <footer>
         <p>&copy; <span id="year"></span> | Chelsea Thomson | Utah | 
         <a class="weblink" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
     </footer>
-    <script src="./scripts/main.js"></script>
     <script src="./scripts/movie.js"></script>
 </body>
- </html>
+</html>
