@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/*main scss for styling project*/
+/*content style page layout*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+body {
+  max-width: 64em;
+}
+
+h2,
+.summary h3,
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border: 2px solid #155149;
+  background-color: #6aa7c2;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 7px 12px #494949;
+          box-shadow: 5px 7px 12px #494949;
+  margin: 2em auto 2em auto;
+  text-align: center;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  padding: 1em;
+}
+
+.summary p,
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+  background: #155149;
+  border: solid transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 3px 12px #494949;
+          box-shadow: 5px 3px 12px #494949;
+  color: #F7EAC9;
+  padding: 1em;
+}
+
+.summary p a,
+.preamble p a,
+.explanation p a,
+.participation p a,
+.benefits p a,
+.requirements p a {
+  color: #F29040;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.summary p a:hover,
+.preamble p a:hover,
+.explanation p a:hover,
+.participation p a:hover,
+.benefits p a:hover,
+.requirements p a:hover {
+  background-color: #F7EAC9;
+  padding: .15em;
+}
+
+.summary p a:visited,
+.preamble p a:visited,
+.explanation p a:visited,
+.participation p a:visited,
+.benefits p a:visited,
+.requirements p a:visited {
+  color: #A23216;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer {
+  float: left;
+  background-color: #6aa7c2;
+  border-radius: 5px;
+}
+
+footer a {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 16em) {
+  /*Small*/
+  body::before {
+    content: "";
+    background-color: #6aa7c2;
+    border-radius: 3px;
+    -webkit-box-shadow: 15px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 65px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2;
+            box-shadow: 15px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 65px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 130px 0px 0 0 #6aa7c2, 170px 0px 0 0 #6aa7c2, 180px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2;
+    padding: 2em;
+    padding-bottom: .1em;
+    padding-right: .05em;
+  }
+  h1 {
+    font-size: 1.75em;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 3em 1em .5em 1em;
+  }
+  h2,
+  .summary h3,
+  .preamble h3,
+  .explanation h3,
+  .participation h3,
+  .benefits h3,
+  .requirements h3 {
+    font-size: 1em;
+    width: 80%;
+    height: 1em;
+  }
+  p {
+    font-size: 16px;
+  }
+  .intro {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    width: 95%;
+    padding: .5em;
+  }
+  footer a {
+    font-size: 1em;
+    padding: 0 8px 0 8px;
+  }
+}
+
+@media only screen and (min-width: 32em) {
+  body {
+    max-width: 28em;
+    float: right;
+    padding: 0 1em 1em 1em;
+  }
+  h1 {
+    font-size: 1.75em;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 3.5em 1em .5em 1em;
+  }
+  footer {
+    font-size: 1em;
+    width: 95%;
+    padding: .75em;
+  }
+  /*Large*/
+}
+
+@media only screen and (min-width: 32em) and (min-width: 64em) {
+  .wrapper a {
+    font-size: 1.25em;
+  }
+  body {
+    max-width: 70%;
+    padding: 2em 0em 2em 0em;
+  }
+  body::before {
+    content: "";
+    margin-left: 5em;
+    background-color: #6aa7c2;
+    border-radius: 3px;
+    -webkit-box-shadow: 25px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
+            box-shadow: 25px 0px 0 0 #6aa7c2, 40px 0px 0 0 #6aa7c2, 85px 0px 0 0 #6aa7c2, 105px 0px 0 0 #6aa7c2, 145px 0px 0 0 #6aa7c2, 215px 0px 0 0 #6aa7c2, 235px 0px 0 0 #6aa7c2, 255px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 345px 0px 0 0 #6aa7c2, 375px 0px 0 0 #6aa7c2, 360px 0px 0 0 #6aa7c2, 450px 0px 0 0 #6aa7c2, 520px 0px 0 0 #6aa7c2, 590px 0px 0 0 #6aa7c2;
+    padding: 2em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+  }
+  h1 {
+    font-size: 3em;
+    padding-top: 4em;
+  }
+  h2,
+  .summary h3,
+  .preamble h3,
+  .explanation h3,
+  .participation h3,
+  .benefits h3,
+  .requirements h3 {
+    font-size: 1.5em;
+    width: 75%;
+    height: 1em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  div {
+    padding: 0 1.5em 0 1.5em;
+  }
+  footer {
+    max-width: 35vw;
+    margin-left: 2em;
+    padding: 1em;
+  }
+  footer::after {
+    content: "";
+    background: #6aa7c2;
+    border-radius: 5px;
+    -webkit-box-shadow: 52px 0px 0 0 #6aa7c2, 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+            box-shadow: 52px 0px 0 0 #6aa7c2, 82px 0px 0 0 #6aa7c2, 115px 0px 0 0 #6aa7c2, 135px 0px 0 0 #6aa7c2, 190px 0px 0 0 #6aa7c2, 220px 0px 0 0 #6aa7c2, 275px 0px 0 0 #6aa7c2, 290px 0px 0 0 #6aa7c2, 350px 0px 0 0 #6aa7c2;
+    margin-left: 5vw;
+    padding: 1.40em;
+    padding-top: 1.55em;
+    padding-bottom: 1.15em;
+    padding-right: 1em;
+  }
+  footer a {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+}
+
+/*media screen*/
+@media only screen and (min-width: 16em) {
+  html {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: -7em 0;
+    background-size: 175%;
+  }
+  h1 {
+    background: url("desertlogo2.JPG") no-repeat;
+    background-position: 1em 0em;
+    background-size: 80%;
+  }
+}
+
+@media only screen and (min-width: 32em) {
+  html {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: 7em 0em;
+    background-size: 110%;
+  }
+  h1 {
+    background: url("desertlogo2.JPG") no-repeat;
+    background-position: 3.25em 0;
+    background-size: 60%;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  html {
+    background: url("desertimg2.png") no-repeat;
+    background-attachment: fixed, scroll;
+    background-position: 13em 0em;
+    background-size: 100%;
+  }
+  h1 {
+    display: block;
+    background: url("desertlogo2.JPG") no-repeat;
+    background-position: 3.5em 0em;
+    background-size: 65%;
+  }
+}
+
+/*side bar styling layout*/
+.design-selection li,
+.design-name,
+.designer-name,
+.design-archives a,
+.zen-resources a {
+  font-family: "Oswald", sans-serif;
+  color: #F7EAC9;
+  text-decoration: none;
+  padding: .05em;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #F29040;
+}
+
+.wrapper {
+  background-color: #155149;
+  width: 88%;
+  padding: 0 3vw 0 3vw;
+}
+
+.wrapper ul {
+  list-style-type: none;
+  padding-left: 5vw;
+}
+
+@media only screen and (min-width: 32em) {
+  .wrapper {
+    width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: -155vw;
+  top: 0;
+  width: 170vw;
+  height: 50px;
+  background-color: #155149;
+}
+
+.sidebar::after {
+  content: "≡";
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #F29040;
+  position: fixed;
+  left: 0vw;
+  top: 0;
+  width: 70vw;
+  height: 10vh;
+  pointer-events: none;
+  width: 15vw;
+  text-align: center;
+  padding-right: .5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media only screen and (min-width: 32em) {
+  .sidebar {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar::after {
+    content: "≡";
+    cursor: pointer;
+    font-size: 2.5em;
+    color: #000000;
+    position: fixed;
+    left: 0vw;
+    top: 0;
+    pointer-events: none;
+    width: 15vw;
+    text-align: center;
+    padding-right: .5em;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
+@media only screen and (min-width: 32em) and (min-width: 32em) {
+  .sidebar {
+    width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar::after {
+    display: none;
+  }
+}
+
+.sidebar:hover {
+  position: fixed;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sidebar:hover::before {
+  content: "";
+  position: fixed;
+  left: 60vw;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 0;
+  top: 0;
+  width: 97vw;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.sidebar:hover::after {
+  content: "X";
+  cursor: pointer;
+  font-size: 5vh;
+  padding: 0 2vw;
+  border-radius: 1em;
+  color: #000000;
+  background-color: #F7EAC9;
+  position: absolute;
+  left: 85vw;
+  top: 1vh;
+  pointer-events: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+@media only screen and (min-width: 32em) {
+  .sidebar:hover {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar:hover::after {
+    content: "X";
+    cursor: pointer;
+    font-size: 5vh;
+    padding: 0 2vw;
+    border-radius: 1em;
+    color: #000000;
+    background-color: #F7EAC9;
+    position: absolute;
+    left: 38vw;
+    top: 1vh;
+    pointer-events: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 32em) and (min-width: 32em) {
+  .sidebar:hover {
+    max-width: 30vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sidebar:hover::after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 32em) {
+  .sidebar {
+    height: auto;
+  }
+  .wrapper {
+    width: 28vw;
+    position: fixed;
+    -webkit-box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
+            box-shadow: 4px 4px 12px #000000, 20px 20px 0px #6aa7c2;
+    overflow: hidden;
+  }
+  .wrapper a:hover {
+    color: #F29040;
+    text-decoration: underline;
+  }
+  .sidebar:hover {
+    pointer-events: none;
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .wrapper {
+    width: 24vw;
+    position: fixed;
+    -webkit-box-shadow: 4px 4px 12px #000000, 25px 25px 0px #6aa7c2;
+            box-shadow: 4px 4px 12px #000000, 25px 25px 0px #6aa7c2;
+    padding: 3vw;
+  }
+  .wrapper::before {
+    content: "Menu";
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #F29040;
+  }
+  .sidebar:hover {
+    pointer-events: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

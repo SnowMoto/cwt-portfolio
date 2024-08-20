@@ -1,0 +1,256 @@
+/*content style page layout*/
+@import "colors";
+@import "fonts";
+
+
+body {
+    max-width: 64em;
+}
+
+h2,
+.summary h3,
+.preamble h3,
+.explanation h3,
+.participation h3,
+.benefits h3,
+.requirements h3 {
+    font-family: $header;
+    color: black;
+    border: 2px solid $green;
+    background-color: $blue;
+    border-radius: 5px;
+    box-shadow: 5px 7px 12px rgb(73, 73, 73);
+    margin: 2em auto 2em auto;
+    text-align: center;
+    transform: skew(-20deg);
+    padding: 1em;
+}
+
+.summary p,
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+    background: $green;
+    border: solid transparent;
+    border-radius: 5px;
+    box-shadow: 5px 3px 12px rgb(73, 73, 73);
+    color: $cream;
+    padding: 1em;
+
+    & a {
+        color: $orange;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    & a:hover {
+        background-color: $cream;
+        padding: .15em;
+    }
+
+    & a:visited {
+        color: $red;
+    }
+
+}
+
+p {
+    font-family: $primary;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer {
+    float: left;
+    background-color: $blue;
+    border-radius: 5px;
+
+    & a {
+        color: black;
+        font-family: $header;
+        font-size: 1.25em;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (min-width: 16em) {
+
+    /*Small*/
+    body::before {
+        content: "";
+        background-color: $blue;
+        border-radius: 3px;
+        box-shadow:
+            15px 0px 0 0 $blue,
+            40px 0px 0 0 $blue,
+            65px 0px 0 0 $blue,
+            105px 0px 0 0 $blue,
+            130px 0px 0 0 $blue,
+            170px 0px 0 0 $blue,
+            180px 0px 0 0 $blue,
+            220px 0px 0 0 $blue;
+        padding: 2em;
+        padding-bottom: .1em;
+        padding-right: .05em;
+    }
+
+    h1 {
+        font-size: 1.75em;
+        font-family: $primary;
+        text-align: center;
+        padding: 3em 1em .5em 1em;
+    }
+
+    h2,
+    .summary h3,
+    .preamble h3,
+    .explanation h3,
+    .participation h3,
+    .benefits h3,
+    .requirements h3 {
+        font-size: 1em;
+        width: 80%;
+        height: 1em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        width: 95%;
+        padding: .5em;
+    }
+
+    footer a {
+        font-size: 1em;
+        padding: 0 8px 0 8px;
+
+    }
+}
+
+@media only screen and (min-width: 32em) {
+    body {
+        max-width: 28em;
+        float: right;
+        padding: 0 1em 1em 1em;
+
+    }
+
+    h1 {
+        font-size: 1.75em;
+        font-family: $primary;
+        text-align: center;
+        padding: 3.5em 1em .5em 1em;
+    }
+
+    footer {
+        font-size: 1em;
+        width: 95%;
+        padding: .75em;
+
+    }
+
+    /*Large*/
+    @media only screen and (min-width: 64em) {
+
+        .wrapper a{
+            font-size: 1.25em;
+          }
+
+        body {
+            max-width: 70%;
+            padding: 2em 0em 2em 0em;
+
+            &::before {
+                content: "";
+                margin-left: 5em;
+                background-color: $blue;
+                border-radius: 3px;
+                box-shadow:
+                    25px 0px 0 0 $blue,
+                    40px 0px 0 0 $blue,
+                    85px 0px 0 0 $blue,
+                    105px 0px 0 0 $blue,
+                    145px 0px 0 0 $blue,
+                    215px 0px 0 0 $blue,
+                    235px 0px 0 0 $blue,
+                    255px 0px 0 0 $blue,
+                    275px 0px 0 0 $blue,
+                    345px 0px 0 0 $blue,
+                    375px 0px 0 0 $blue,
+                    360px 0px 0 0 $blue,
+                    450px 0px 0 0 $blue,
+                    520px 0px 0 0 $blue,
+                    590px 0px 0 0 $blue;
+                padding: 2em;
+                padding-bottom: .5em;
+                padding-right: 1em;
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            padding-top: 4em;
+        }
+
+        h2,
+        .summary h3,
+        .preamble h3,
+        .explanation h3,
+        .participation h3,
+        .benefits h3,
+        .requirements h3 {
+            font-size: 1.5em;
+            width: 75%;
+            height: 1em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        div {
+            padding: 0 1.5em 0 1.5em;
+        }
+
+        footer {
+            max-width: 35vw;
+            margin-left: 2em;
+            padding: 1em;
+
+            &::after {
+                content: "";
+                background: $blue;
+                border-radius: 5px;
+                box-shadow:
+                    52px 0px 0 0 $blue,
+                    82px 0px 0 0 $blue,
+                    115px 0px 0 0 $blue,
+                    135px 0px 0 0 $blue,
+                    190px 0px 0 0 $blue,
+                    220px 0px 0 0 $blue,
+                    275px 0px 0 0 $blue,
+                    290px 0px 0 0 $blue,
+                    350px 0px 0 0 $blue;
+                margin-left: 5vw;
+                padding: 1.40em;
+                padding-top: 1.55em;
+                padding-bottom: 1.15em;
+                padding-right: 1em;
+            }
+        }
+
+        footer a {
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "colors";
+
+
+@media only screen and (min-width: 16em) {
+    html {
+        background: url("desertimg2.png") no-repeat;
+        background-attachment: fixed, scroll;
+        background-position: -7em 0;
+        background-size: 175%;
+    }
+
+    h1 {
+        background: url("desertlogo2.JPG") no-repeat;
+        background-position: 1em 0em;
+        background-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 32em) {
+    html {
+        background: url("desertimg2.png") no-repeat;
+        background-attachment: fixed, scroll;
+        background-position: 7em 0em;
+        background-size: 110%;
+    }
+
+    h1 {
+        background: url("desertlogo2.JPG") no-repeat;
+        background-position: 3.25em 0;
+        background-size: 60%;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+
+    html {
+        background: url("desertimg2.png") no-repeat;
+        background-attachment: fixed, scroll;
+        background-position: 13em 0em;
+        background-size: 100%;
+    }
+
+    h1 {
+        display: block;
+        background: url("desertlogo2.JPG") no-repeat;
+        background-position: 3.5em 0em;
+        background-size: 65%;
+
+    }
+}
